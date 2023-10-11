@@ -12,7 +12,7 @@ public class App {
             System.out.println("Write second Number:");
             Num2 = sc.nextFloat();
 
-            System.out.println("Write the Operation Number to Do: 1: Addition, 2: Subtraction, 3: Multiplication, 4: Division");
+            System.out.println("Write the Operation Number to Do:\n- 1: Addition\n- 2: Subtraction\n- 3: Multiplication\n- 4: Division\n- 5: Exponentiation");
             option = sc.nextInt();
         }
 
@@ -24,6 +24,7 @@ public class App {
             case 2: result = operation.subtract(); break;
             case 3: result = operation.multp(); break;
             case 4: result = operation.split(); break;
+            case 5: result = operation.power(); break;
         }
 
         System.out.println("Result: "+result);

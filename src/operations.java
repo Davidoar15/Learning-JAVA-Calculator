@@ -25,6 +25,15 @@ public class operations {
     }
 
     public float split() {
-        return Num1 / Num2;
+        if (Num2 != 0) {
+            return Num1 / Num2;
+        } else {
+            throw new ArithmeticException("Division by 0 not allowed");
+        }
+    }
+
+    public float power() {
+        System.out.println("Base: "+Num1+" | Exponent: "+Num2);
+        return (float) Math.pow(Num1, Num2);
     }
 }
